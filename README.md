@@ -1,6 +1,15 @@
-# msg-ops
+# Emailer Platform
 
-A Clojure library designed to ... well, that part is up to you.
+An API platform to enable the programatic sending of emails
+
+example post request body:
+
+  {:to "joshtackett7@gmail.com"
+  :cc "jtackett@villanova.edu"
+  :subject "New Network"
+  :message "Please draw up a design for this"
+  :fields {:data "3mb"
+  :speakers 5}}
 
 ## Usage
 

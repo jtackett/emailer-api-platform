@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Leiningen: io.aleph/dirigiste:0.1.0-alpha8">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/io/aleph/dirigiste/0.1.0-alpha8/dirigiste-0.1.0-alpha8.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

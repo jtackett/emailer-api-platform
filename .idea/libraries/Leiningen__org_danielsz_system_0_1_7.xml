@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Leiningen: org.danielsz/system:0.1.7">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/danielsz/system/0.1.7/system-0.1.7.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

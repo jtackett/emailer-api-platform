@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Leiningen: juxt.modular/http-kit:0.5.4">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/juxt/modular/http-kit/0.5.4/http-kit-0.5.4.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

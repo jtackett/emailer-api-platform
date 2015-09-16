@@ -1,0 +1,15 @@
+(reloaded.repl/set-init! prod-system)
+(reloaded.repl/reset)
+exit
+(reloaded.repl/set-init! prod-system)
+(reloaded.repl/reset)
+exit
+(reset)
+(user/reset)
+(start-system)
+(ns core)
+(start-system)
+start-system
+(core/start-system)
+(start-system)
+-main

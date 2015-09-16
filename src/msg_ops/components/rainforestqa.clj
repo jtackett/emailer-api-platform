@@ -2,8 +2,24 @@
   (:require [bidi.bidi :refer [RouteProvider]]
             [postal.core :as mail]))
 
-(defn create-csv []
-  )
+(defn create-csv [fields]
+  (let [headers (map name (keys fields))
+        values  (vals fields)]
+    (str
+     (clojure.string/join "," headers)
+     "\n"
+     (clojure.string/join "," values))))
+
+(create-csv {:data "3mb"
+             :speakers 5
+             :notes "The carpet is thick"})
+
+(defn write [path content]
+  (spit path (if content
+               content
+               "Empty file"))
+  (java.io.File. path))
+
 
 ;; Sample input
 ;;{:to "joshtackett7@gmail.com"
@@ -24,7 +40,8 @@
                         cc (:cc bd)
                         subject (:subject bd)
                         fields (:fields bd)
-                        message (:message bd)]
+                        message (:message bd)
+                        file (create-csv fields)]
                     (prn (str "THIS IS THE REQUEST + = = = =" req))
                     (prn " + + + + + + + + ")
                     (prn (slurp body))
@@ -40,8 +57,8 @@
                       :subject subject
                       :body [{:type "text/html"
                               :content message}
-                             #_{:type :attachment
-                                :content (java.io.File. "/tmp/foo.txt")}]}))
+                             {:type :attachment
+                              :content (write "/tmp/test.csv" file)}]}))
                   )}]))
 
 (defn new-hook []
